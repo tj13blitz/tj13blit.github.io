@@ -28,8 +28,53 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10px;
   }
 
+  nav{
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+  }
+  nav div{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 30px;
+    color: white;
+
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 30px;
+    text-decoration: none;
+  }
+  nav ul li{
+    display: flex;
+    padding: 15px;
+  }
+  nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover{
+    background-color: rebeccapurple;
+  }
+  @media (max-width: 600px){
+    nav{
+      flex-direction: column;
+    }
+    nav div{
+      justify-content: center;
+    }
+    nav ul{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
   @media (min-width: 600px){
     .flex-container{
         flex-direction: row;
@@ -56,6 +101,17 @@
 </head>
 <body>
     <header>
+        <nav>
+          <div>
+            Logo
+          </div>
+          <ul>
+            <li><a href = "home.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "services.html">Services</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+          </ul>
+        </nav>
         <h1>FlexBox practice</h1>
     </header>
 
