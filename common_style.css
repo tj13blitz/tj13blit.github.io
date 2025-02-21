@@ -1,0 +1,95 @@
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+main article{
+    background: lightgray;
+    flex-grow: 1;
+    padding: 1em;
+}
+main nav{
+    background: beige;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main aside{
+    background: beige;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    background: #333;
+    justify-content: space-between;
+}
+footer{
+    background: #333;
+    height: 10vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+header div{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 30px;
+    color: white;
+
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 30px;
+    text-decoration: none;
+    align-content: center;
+}
+header ul li{
+    display: flex;
+    padding: 15px;
+}
+header ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    background-color: rebeccapurple;
+}
+header ul li a.active{
+    background-color: rebeccapurple;
+    font-weight: bold;
+}
+h1{
+    display: flex;
+    align-content: center;
+    color: white;
+}
+@media(min-width: 576px){
+    main{
+        flex-direction: row;
+    }
+    nav{
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 20vw;
+    }
+    aside{
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 20vw;
+    }
+}

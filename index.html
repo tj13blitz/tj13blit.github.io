@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        article {
-            background-color: #FFECB3;
-            font-size: 16px;
-            color: #333;
-        }
-        article.featured {
-            background-color: #FFD54F;
-            font-weight: bold;
-            border: 2px solid #FFA000;
-        }
-        article p {
-            line-height: 1.5;
-            font-style: italic;
-        }
-        article.featured:hover {
-            background-color: #FFB300;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="common_style.css">
+<title>Fun</title>
+<style>
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    article div{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 250px;
+        padding: 25px;
+        border: 2px solid black;
+    }
+    article h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
+    article h3{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+    
+    
+</style>
 </head>
-
 <body>
-    <article>
-        <h2>Regular Article</h2>
-        <p>This is a normal article without any special styling</p>
-    </article>
+    <header>
+        <div>
+            <img src="C:\Users\tyler\OneDrive\Documents\Web AppDevelopment\Face.png" alt="My Face" width="120" height="75" >
+        </div>
+        <h1>Tyler Blitz</h1>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "aboutme.html">About Me</a></li>
+            <li><a href = "fun.html">Fun</a></li>
+            <li><a href = "blog.html">Blog</a></li>
+        </ul>
+    </header>
+    <main>
+        <nav>
 
-    <article class="featured">
-        <h2>Featured Article</h2>
-        <p>This is a featured article with a bold look and border.</p>
-    </article>
+        </nav>
+        <article>
+            <h2>Home Page</h2>
+            <div>
+                <h3>About Me</h3>
+                <p>The about me page has information regarding my education and work experience.</p>
+            </div>
+            <div>
+                <h3>Fun</h3>
+                <p>The fun page includes some photos of me and my favorite things.</p>
+            </div>
+            <div>
+                <h3>Blog</h3>
+                <p>The blog page is a fun article about tigers.</p>
+            </div>
+            <div>
+                <h3>GitHub</h3>
+                <p>Below is a link to my GitHub.</p>
+                <a href = "https://github.com/tj13blitz">GitHub Link</a>
+            </div>
+        </article>
+        <aside>
+
+        </aside>
+    </main>
+    <footer>
+        Tyler Blitz Siena College Copyright 2025
+    </footer>
 </body>
 </html>

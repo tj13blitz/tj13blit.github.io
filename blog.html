@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="common_style.css">
+<title>Blog</title>
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Apply the animation to the element */
+        .animated-box {
+            width: 150px; /* Adjust the size of the image */
+            height: 150px; /* Adjust the size of the image */
+            animation: rotate 4s infinite linear;
+        }
+        .animated-box:hover {
+            animation-play-state: paused;
+        }
+        main nav p{
+            display: flex;
+            padding-bottom: 25px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <div>
+                <img src="C:\Users\tyler\OneDrive\Documents\Web AppDevelopment\Face.png" alt="My Face" width="120" height="75" >
+            </div>
+            <h1>Tyler Blitz</h1>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "aboutme.html">About Me</a></li>
+                <li><a href = "fun.html">Fun</a></li>
+                <li><a href = "blog.html">Blog</a></li>
+            </ul>
+        </header>
+        <main>
+            <nav>
+                <p>
+                    Hover to Stop Me!
+                </p>
+                <div class="animated-box">
+                    <img src="C:\Users\tyler\OneDrive\Documents\Web AppDevelopment\Tiger.png" alt="Tiger" width="200" height="120" >
+                </div>
+            </nav>
+            <article>
+                <h2>The Majestic Tiger: A Symbol of Strength and Beauty</h2>
+                Tigers are one of the most iconic and majestic creatures on Earth. Known for their striking orange coats with black stripes, these big cats are not only a symbol of strength and power but also play a crucial role in maintaining the balance of their ecosystems. Found primarily in Asia, tigers inhabit a range of environments, from dense forests and mangroves to snowy mountains.
+
+                Tigers are solitary animals, with each individual maintaining a large territory that they mark and defend fiercely. They are apex predators, meaning they sit at the top of the food chain. Their diet consists mainly of deer, wild boar, and other large mammals. A single tiger can consume up to 40 pounds of meat in one meal, showcasing their incredible strength and hunting prowess.
+
+                Despite their power, tigers face numerous threats. Habitat loss due to deforestation, human encroachment, and poaching for their skins and body parts have drastically reduced their populations. There are only around 3,900 tigers left in the wild, making them an endangered species. Conservation efforts, such as anti-poaching laws and habitat preservation, are critical to their survival.
+
+                Tigers also hold significant cultural importance. In many Asian cultures, they are revered as symbols of courage, royalty, and protection. They appear in folklore, art, and literature, often representing strength and independence.
+
+                Efforts to protect tigers have shown some success, with populations stabilizing in certain regions. However, much work remains to ensure their long-term survival. By supporting conservation initiatives and raising awareness, we can help preserve these magnificent animals for future generations.
+
+                In conclusion, tigers are not just beautiful creatures; they are vital to the health of their ecosystems and a testament to the wonders of the natural world. Protecting them is not only an ethical responsibility but also a necessity for maintaining biodiversity. Let us strive to ensure that the roar of the tiger continues to echo through the forests for years to come.<br>
+                (Article by DeepSeek AI)
+            </article>
+            <aside>
+                <Div>
+                    <img src="C:\Users\tyler\OneDrive\Documents\Web AppDevelopment\Tiger2.png" alt="Tiger2" width="200" height="250" >
+                </Div>
+            </aside>
+        </main>
+        <footer>
+            Tyler Blitz Siena College Copyright 2025
+        </footer>
+    </body>
+</html>
